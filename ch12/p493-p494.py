@@ -20,8 +20,18 @@ print()
 flights2 = {}
 
 # Add your "for" loop here
+for time, destination in flights.items():
+    #print(convert2ampm(time), ' ', destination.title())
+    flights2[convert2ampm(time)] = destination.title()
 
 print()
 print("flights2:")
 pprint.pprint(flights2)
+print()
+
+more_flights = {convert2ampm(time): destination.title() for time, destination in flights.items()}
+
+print()
+print("more_flights:")
+pprint.pprint(more_flights)
 print()
