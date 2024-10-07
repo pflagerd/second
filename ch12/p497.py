@@ -8,8 +8,11 @@ for num in data:
 print(data)
 print(evens)
 
+evens = [num for num in data if not num % 2]
+print(evens)
 
-data= [1, 'one', 2, 'two', 3, 'three', 4, 'four']
+
+data = [1, 'one', 2, 'two', 3, 'three', 4, 'four']
 words = []
 for num in data:
     if isinstance(num, str):
@@ -18,8 +21,9 @@ for num in data:
 print(data)
 print(words)
 
+print([num for num in data if isinstance(num, str)])
 
-data = list('So long and thanks for all the fish'.splot())
+data = list('So long and thanks for all the fish'.split())
 title = []
 for word in data:
     title.append(word.title())
@@ -27,3 +31,4 @@ for word in data:
 print(data)
 print(words)
 
+print([word.title() for word in data])
