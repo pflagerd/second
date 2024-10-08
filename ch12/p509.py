@@ -1,3 +1,5 @@
+# See also requests_listcomp.py
+# This file was copied verbatim from requests_listcomp.py
 import requests
 
 urls = ('http://headfirstlabs.com', 'http://oreilly.com', 'http://twitter.com')
